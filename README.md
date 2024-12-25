@@ -32,4 +32,4 @@ python main.py
 ## Contributing
 
 If you have any suggestions or improvements, please fork the repository and submit a pull request. For major changes or feature requests, please open an issue to discuss them first.
-
+- discord.gg/kvm
